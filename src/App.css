@@ -1,31 +1,37 @@
 body {
-  background-image: url("./LBG.jpg");
+  background-image: url("./SI.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-.rec1 {
-  width: 900px;
+.rec1:not(.LG1) {
+  width: 500px;
   height: 500px;
-  opacity: 0.8;
+  opacity: 1;
   border-radius: 30px;
-  background-color: rgb(83, 165, 237);
-  margin: 60px 0px 0px 150px;
+
+  margin: 60px 0px 0px 370px;
 }
 .img1 {
   width: 400px;
   height: 500px;
   opacity: none;
 }
-.rec2 {
+.coll {
   display: block;
   align-items: center;
   justify-content: center;
-  margin-left: 100px;
+
+  border-radius: 30px;
+  background-color: rgb(3, 15, 48);
+}
+.rec2 {
+  display: grid;
+  place-items: center;
 }
 .SI {
-  font-family: Inter;
+  font-family: sans-serif;
   font-size: 38px;
   font-weight: 700;
   line-height: 46px;
@@ -34,7 +40,7 @@ body {
   color: rgb(10, 72, 188);
 }
 .SIA {
-  font-family: Inter;
+  font-family: sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 46px;
@@ -43,6 +49,7 @@ body {
 }
 .FP {
   font-size: 10px;
+  font-family: sans-serif;
 }
 .FP:hover {
   color: blue;
@@ -55,14 +62,49 @@ body {
 }
 .CR {
   color: blue;
+  font-family: sans-serif;
 }
 .CR:hover {
   color: aqua;
   cursor: pointer;
+  font-family: sans-serif;
 }
 .LGN {
-  border-radius: 20px;
+  border-radius: 10px;
+  font-family: Inter;
   background-color: rgb(13, 87, 247);
   color: aqua;
   border: 0cm;
+  width: 100%;
+  margin-top: 4px;
+}
+.LGN:hover {
+  background-color: rgb(10, 3, 150);
+  font-family: sans-serif;
+}
+.LGN {
+  margin-top: 7px;
+  font-family: sans-serif;
+}
+.LG1 {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+input {
+  background-color: rgb(244, 246, 246);
+
+  width: 240px;
+  box-sizing: content-box;
+  color: rgb(17, 17, 131);
+}
+label {
+  display: block;
+
+  display: grid;
+  place-items: center;
+}
+.CNT {
+  color: rgb(96, 135, 217);
+  font-family: sans-serif;
 }
